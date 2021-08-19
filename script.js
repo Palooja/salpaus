@@ -45,9 +45,9 @@ else{
 
 console.log(laskutehtava(9768, 9875));
 
+let pvm = "2021/08/18";
 
-
-
+console.log(pvm.split("/")[0]);
 
 
 
