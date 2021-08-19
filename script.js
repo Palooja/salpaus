@@ -47,7 +47,12 @@ console.log(laskutehtava(9768, 9875));
 
 let pvm = "2021/08/18";
 
-console.log(pvm.split("/")[0]);
+function pvmFin(vuosi, kk, pv){
+    return "paivamaara oikeassa jarjestuksessa on " + pv+"."+kk+"."+vuosi;
+}
+  
+
+console.log(pvmFin(pvm.split("/")[0],pvm.split("/")[1],pvm.split("/")[2]));
 
 
 
