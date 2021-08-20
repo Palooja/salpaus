@@ -20,4 +20,6 @@ body{
   background-color: pink;
   padding: 60
 }
-  
+  ul{
+    list-style: none;
+  }

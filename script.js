@@ -70,30 +70,37 @@ for(let i=1; i<16; i++){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 monen
 rivin
 kommentti
 */
+
+
+//console.log(document.querySelector("#kentta").type);
+console.log(document.querySelector('.lisaanappi').value);
+document.querySelector('.lisaaNappi').addEventListener('click', e =>{
+  e.preventDefault();
+  console.log(document.querySelector('#kentta').value);
+
+document.querySelector('.ilmoitus').innerHTML = document.querySelector('#kentta').value;
+
+setTimeout(() => document.querySelector('.ilmoitus').innerHTML='', 3000);
+});
+document.querySelector('.merkinta').addEventListener('click', e =>{
+e.preventDefault();
+console.log("nappi toimii!");
+if(document.querySelector('#teht_a').checked){
+
+  }
+  else{
+    alert('Tehtävä A ei ole merkitty');
+  }
+
+  if(document.querySelector('#teht_b').checked){
+    alert('Tehtävä B on merkitty');
+  }
+  else{
+    alert('Tehtävä B ei ole merkitty');
+    }
+});
